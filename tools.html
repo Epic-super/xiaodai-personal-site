@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具箱 - 小待的个人藏宝库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="section reveal in">
+            <h2>工具箱</h2>
+            <p class="desc">这里收集了一些我常用或自己开发的小工具，全部可直接在页面内使用。</p>
+
+            <div class="tool-container">
+                <h2>🎲 随机数生成器</h2>
+                <label for="rnd-min">最小值</label>
+                <input type="number" id="rnd-min" value="1">
+                <label for="rnd-max">最大值</label>
+                <input type="number" id="rnd-max" value="100">
+                <button id="rnd-btn">生成随机数</button>
+                <div class="tool-result" id="rnd-out">—</div>
+            </div>
+
+            <div class="tool-container">
+                <h2>✅ 待办事项列表</h2>
+                <p class="desc" style="margin-bottom:var(--space-sm)">数据保存在浏览器本地（localStorage）。</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <input type="text" id="todo-input" placeholder="输入新的待办事项..." style="flex:1;min-width:200px;margin-bottom:0">
+                    <button id="todo-add">添加</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <div class="tool-container">
+                <h2>📖 六级单词速记 <span class="badge badge-accent">精选</span></h2>
+                <p class="desc" style="margin-bottom:var(--space-sm)">点击卡片查看释义，可前后切换。</p>
+                <div class="flashcard" id="fc-card">加载中...</div>
+                <div class="flash-actions">
+                    <button id="fc-prev">← 上一个</button>
+                    <button id="fc-flip">翻转卡片</button>
+                    <button id="fc-next">下一个 →</button>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top:var(--space-lg)">
+                <div class="card">
+                    <h4>🧮 万能计算器</h4>
+                    <p>一个多功能计算器，满足日常和学习中的计算需求。</p>
+                    <span class="badge badge-accent">即将上线</span>
+                </div>
+                <div class="card">
+                    <h4>🎓 学生证生成器</h4>
+                    <p>用于生成模拟学生证的工具。</p>
+                    <span class="badge badge-accent">即将上线</span>
+                </div>
+                <div class="card">
+                    <h4>📋 雅思成绩检查器</h4>
+                    <p>一个模拟的雅思成绩查询工具。</p>
+                    <span class="badge badge-accent">即将上线</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
