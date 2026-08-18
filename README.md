@@ -2,6 +2,12 @@
 
 个人网站重构版（WorkBuddy 按 SOP 流程生成）。
 
+## 🌐 线上地址
+
+**https://epic-super.github.io/xiaodai-personal-site/**
+
+通过 GitHub Pages 部署，`main` 分支每次 push 后由 GitHub Actions 自动重新发布（约 2 分钟）。
+
 - 纯静态 HTML/CSS/JS，无框架
 - 深色优先设计：深蓝底 + 亮蓝主色 + 琥珀强调，支持暗/亮双主题
 - 7 个页面：首页 / 关于我 / 学习笔记 / 项目展示 / 博客随笔 / 工具箱 / 联系我
@@ -14,6 +20,12 @@
 python -m http.server 8124
 # 打开 http://127.0.0.1:8124/index.html
 ```
+
+## 部署
+
+- 站点托管：GitHub Pages（Actions 工作流 `.github/workflows/pages.yml`）
+- 更新流程：改代码 → `git add . && git commit -m "..." && git push origin main` → 等 Actions 跑完即上线
+- 手动触发部署：仓库 Actions 页 → 「Deploy to GitHub Pages」→ Run workflow
 
 ## 目录
 
