@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 小待的个人藏宝库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="section reveal in">
+            <h2>联系我</h2>
+            <p class="desc">如果你有任何问题、建议或合作意向，欢迎通过以下方式联系我，或者直接填写下面的表单。</p>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <span class="icon">📧</span>
+                    <b>邮箱</b>
+                    <a href="mailto:3315874081@qq.com">3315874081@qq.com</a>
+                </div>
+                <div class="contact-card">
+                    <span class="icon">🐙</span>
+                    <b>GitHub</b>
+                    <a href="https://github.com/Epic-super" target="_blank" rel="noopener">github.com/Epic-super</a>
+                </div>
+                <div class="contact-card">
+                    <span class="icon">💬</span>
+                    <b>微信</b>
+                    <span style="color:var(--muted);font-size:.85rem">扫码添加</span>
+                </div>
+                <div class="contact-card">
+                    <span class="icon">🔗</span>
+                    <b>LinkedIn</b>
+                    <span class="badge badge-muted">待补充</span>
+                </div>
+            </div>
+
+            <div class="contact-qr">
+                <img src="images/wechat_qr.png" alt="微信二维码" style="width:170px;height:170px">
+                <p class="desc">微信扫一扫，加我好友</p>
+            </div>
+
+            <div class="tool-container" style="margin-top:var(--space-lg)">
+                <h2>✉️ 给我留言</h2>
+                <p class="desc" style="margin-bottom:var(--space-md)">表单通过 mailto 方式提交（点击后打开邮件客户端）。</p>
+                <form action="mailto:3315874081@qq.com" method="post" enctype="text/plain">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">邮箱：</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="subject">主题：</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="message">内容：</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">发送消息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
